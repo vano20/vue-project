@@ -10,12 +10,12 @@ export default {
   props: {
     preposition: {
       type: String,
-      default: "an",
+      default: "",
     },
   },
   computed: {
     text() {
-      return `This is ${this.preposition} about page`;
+      return `This is ${this.preposition || "the"} about page`;
     },
   },
 };

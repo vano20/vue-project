@@ -5,14 +5,14 @@
 </template>
 
 <script>
-const FALLBACK = "of";
+const FALLBACK = "the";
 
 export default {
   name: "AboutView",
   props: {
     preposition: {
       type: String,
-      default: "an",
+      default: "",
     },
   },
   computed: {

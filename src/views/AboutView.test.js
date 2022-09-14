@@ -5,7 +5,11 @@ let wrapper;
 
 describe('about view', () => {
   it('should test something', () => {
-    wrapper = shallowMount(AboutView);
+    wrapper = shallowMount(AboutView, {
+      propsData: {
+        preposition: "an",
+      },
+    });
 
     expect(wrapper.vm.text).toBe('This is an about page');
 
